@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url('../assests/images/bookbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Tektur', sans-serif;
+}
+
+.nav-right {
+    display: flex;
+    margin: 18px auto;
+    justify-content: center;
+}
+
+.navbar {
+    background: url('../assests/images/navbg.jpg');
+    border-radius: 0px 30px 0px 30px;
+    padding: 7px;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.navbar li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: rgba(74, 66, 20, 0.33);
+    border-radius: 0px 25px 0px;
+    transition-duration: .1s;
+}
+
+.navbar li a:active {
+    background-color: #b9967073;
+    border-radius: 0px 25px 0px;
+    transition-duration: 1s;
+}
+
+.main .button {
+    display: block;
+    left: 85%;
+    top: -6px;
+    position: absolute;
+    overflow: visible;
+    background-color: transparent;
+    border: 0px;
+    filter: drop-shadow(6px 6px 8px white);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main .button img {
+    height: 100px;
+    width: 75px;
+    padding: 15px 0px;
+}
+
+/* Section body */
+.section-body h4 {
+    font-size: large;
+}
+
+.vertical-nav {
+    padding-top: 10px;
+}
+
+.vertical-nav ul li {
+    display: flex;
+    justify-content: center;
+}
+
+.section-body ul {
+    top: 140px;
+    left: 35px;
+    padding: 45px 28px 130px 34px;
+
+    list-style: none;
+    width: 18%;
+    background-color: rgb(189 185 185 / 73%);
+    position: fixed;
+    height: auto;
+    overflow: auto;
+}
+
+.section-body li a {
+    margin: 8px;
+    display: block;
+    color: #000;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.section-body li a.active {
+    background-color: #000;
+    color: white;
+}
+
+.section-body li a:hover:not(.active) {
+    background-color: #0000003b;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Section-body-2 */
+.gallery-main {
+    margin-left: 25%;
+    height: auto;
+    padding: 10px;
+}
+
+.gallery-main h2 {
+    padding: 25px 0px;
+    color: #000;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery .image-holder img:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+
+}
+
+.spantext {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: rgb(231 0 0) 0px 0px 5px, rgb(0 0 0) 0px 0px 10px, rgb(255 0 0) 0px 0px 15px, rgb(0 0 0) 0px 0px 20px, rgb(201 0 0) 0px 0px 30px, rgb(0 0 0) 0px 0px 40px, rgb(91 216 255) 0px 0px 55px, rgb(241 0 0) 0px 0px 75px;
+    user-select: auto !important;
+}
+
+div.desc {
+    text-align: center;
+    width: 100%;
+}
+
+.desc i {
+    top: 3px;
+    position: relative;
+    float: left !important;
+    padding-left: 15px;
+}
+.desc a{
+    text-decoration: none;
+}
+
+.Thrilleri,
+.Romantic i,
+.History i {
+    position: relative;
+    top: -18px;
+}
+
+.desc button {
+    position: relative;
+    left: 17px;
+    border-radius: 20px;
+    color: white;
+    width: 66%;
+    display: block;
+    padding: 7px;
+    margin: 25px;
+    background-color: rgb(3 3 3 / 86%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.desc button:hover {
+    position: relative;
+    left: 17px;
+    border-radius: 20px;
+    color: white;
+    width: 66%;
+    display: block;
+    padding: 7px;
+    margin: 25px;
+    background-color: rgb(3 3 3 / 86%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: btnbounce 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes btnbounce {
+
+    5%,
+    50% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1) rotate(-5deg);
+    }
+
+    25% {
+        transform: scale(1) rotate(5deg);
+    }
+
+    30% {
+        transform: scale(1) rotate(-3deg);
+    }
+
+    35% {
+        transform: scale(1) rotate(2deg);
+    }
+
+    40% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+.gallery img {
+    height: 250px;
+    width: 200px;
+    padding: 15px 15px;
+}
+
+.btn {
+    display: block;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(3, 3, 3, 0.71);
+    font-size: 25px;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 15px;
+    border: 1px solid white;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.button {
+    display: block;
+    left: 90%;
+    top: -10px;
+    position: absolute;
+    background-color: transparent;
+    border: 0px;
+    filter: drop-shadow(6px 6px 8px white);
+}
+
+.button:hover,
+:active {
+    background-color: transparent;
+}
+
+.button img {
+    height: 115px;
+    width: 90px;
+    padding: 15px 0px;
+}
+
+/* Media query */
+@media(max-width: 725px) {
+    .main .button {
+        left: 80%;
+        top: 0px;
+    }
+
+    .main .button img {
+        height: 85px;
+        width: 63px;
+    }
+
+    .navbar li a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .navbar li a:hover {
+        border-radius: 0px 25px 0px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .gallery {
+        padding-right: 0px;
+    }
+
+    .gallery img {
+        height: 140px;
+        width: 100px;
+    }
+
+    .spantext {
+        font-size: 10px;
+    }
+
+    .desc i {
+        padding-left: 0;
+    }
+
+    .desc button {
+        left: 4px;
+        width: 64%;
+        padding: 0px;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    .Thriller,
+    .Thriller,
+    .Romantic,
+    .History {
+        padding: 4px;
+    }
+
+    .section-body ul {
+        left: 0;
+        width: 25%;
+    }
+
+    .section-body li a {
+        font-size: 13px;
+        margin: 4px;
+        padding: 6px 9px;
+    }
+
+    strong {
+        position: relative;
+        left: -6px;
+        top: -25px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 540px) {
+    .main .button {
+        padding: 0px;
+        left: 85%;
+        top: 4px;
+    }
+
+    .main .button img {
+        height: 70px;
+        width: 45px;
+    }
+
+    .navbar {
+        border-radius: 0px 25px 0px 25px;
+        padding: 5px;
+    }
+
+    .navbar li a {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .navbar li a:hover {
+        border-radius: 0px 20px 0px;
+    }
+
+    .gallery-main h2 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 380px) {
+    .main .button {
+        left: 85%;
+        top: 2px;
+    }
+
+    .main .button img {
+        height: 70px;
+        width: 45px;
+    }
+
+    .navbar {
+        border-radius: 0px 15px 0px 15px;
+        padding: 5px;
+    }
+
+    .navbar li a {
+        font-size: 9px;
+        padding: 5px;
+    }
+    strong {
+        position: relative;
+        left: -25px;
+        top: -15px;
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .Thriller,
+    .Thriller,
+    .Romantic,
+    .History {
+        padding: 0px;
+    }
+}

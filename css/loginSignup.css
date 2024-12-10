@@ -1,0 +1,255 @@
+@import url('https://fonts.googlepis.com/css2?family=poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assests/images/bookbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
+    overflow: hidden;
+}
+
+.nav-right {
+    display: flex;
+    margin: 18px auto;
+    justify-content: center;
+}
+
+.navbar {
+    background: url('../assests/images/navbg.jpg');
+    border-radius: 0px 30px 0px 30px;
+    padding: 7px;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.navbar li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'Tektur', sans-serif;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: rgba(74, 66, 20, 0.33);
+    border-radius: 0px 25px 0px;
+    transition-duration: .1s;
+}
+
+.navbar li a:active {
+    background-color: #b9967073;
+    border-radius: 0px 25px 0px;
+    transition-duration: 1s;
+}
+
+.main .button {
+    display: block;
+    left: 85%;
+    top: -6px;
+    position: absolute;
+    overflow: visible;
+    background-color: transparent;
+    border: 0px;
+    filter: drop-shadow(6px 6px 8px white);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main .button img {
+    height: 100px;
+    width: 75px;
+    padding: 15px 0px;
+}
+
+.wrapper {
+    width: 333px;
+    padding: 2rem 1rem;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+    font-size: 2rem;
+    color: #07001f;
+    margin-bottom: 1.2rem;
+    font-family: 'Tektur', sans-serif;
+}
+
+.wrapper form input {
+    width: 92%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #e4e4e4;
+}
+
+.BtnForLoginSignUp {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 7px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(122 83 38);
+}
+
+.BtnForLoginSignUp:hover {
+    background: rgb(156 97 26 / 86%);
+}
+
+.wrapperinput:focus {
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.terms {
+    margin-top: 0.2rem;
+}
+
+.terms input {
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.terms label {
+    font-size: 0.7rem;
+}
+
+.terms a {
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+
+.member {
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+
+.member a {
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+
+.recover {
+    text-align: right;
+    font-size: 0.7rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a {
+    text-decoration: none;
+    color: #464647;
+}
+
+@media(max-width: 725px) {
+    .main .button {
+        left: 80%;
+        top: 0px;
+    }
+
+    .main .button img {
+        height: 85px;
+        width: 63px;
+    }
+
+    .navbar li a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .navbar li a:hover {
+        border-radius: 0px 25px 0px;
+    }
+
+    .wrapper {
+        width: 280px;
+    }
+}
+
+@media(max-width: 540px) {
+    .main .button img {
+        height: 70px;
+        width: 45px;
+    }
+
+    .main .button {
+        padding: 0px;
+        left: 85%;
+        top: 4px;
+    }
+
+    .navbar li a {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .navbar li a:hover {
+        border-radius: 0px 20px 0px;
+    }
+
+    .wrapper {
+        width: 250px;
+    }
+}
+
+@media(max-width: 380px) {
+    .main .button {
+        left: 85%;
+        padding: 0px;
+        top: 2px;
+    }
+
+    .navbar {
+        border-radius: 0px 15px 0px 15px;
+        padding: 5px;
+        top: 2px;
+    }
+
+    .navbar li a {
+        font-size: 9px;
+        padding: 5px;
+    }
+
+    .wrapper {
+        width: 240px;
+        margin: 20px auto;
+    }
+
+    .wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    .wrapper form input {
+        padding: 3px 20px;
+    }
+
+    .BtnForLoginSignUp {
+        padding: 3px 20px;
+    }
+}
